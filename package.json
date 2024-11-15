@@ -1,4 +1,11 @@
 {
+  "public": true,
+  "author": "Mike Connor",
+  "name": "stolinski-dropin-svelte",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mconnor/stolinski-dropin-svelte.git"
+  },
   "dependencies": {
     "@drop-in/decks": "^0.0.12",
     "@drop-in/graffiti": "^0.3.4",
@@ -21,9 +28,10 @@
     "vite": "^5.4.5"
   },
   "engines": {
-    "node": ">20.11.1"
+    "node": ">= 20.11.0 <21 || >= 22.9.0",
+    "pnpm": ">=9.1.2"
   },
-  "name": "stolinski-dropin-svelte",
+  "packageManager": "pnpm@9.13.2",
   "scripts": {
     "build": "vite build",
     "check": "svelte-check --tsconfig ./tsconfig.json",
